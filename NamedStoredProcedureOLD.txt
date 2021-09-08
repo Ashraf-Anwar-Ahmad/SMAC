@@ -1,0 +1,27 @@
+@NamedStoredProcedureQuery(
+
+name = "Login",
+
+procedureName = "PR_GET_AUTH",
+
+parameters = {
+
+@StoredProcedureParameter(mode = ParameterMode.IN, type = String.class, name = "USERTYPE"),
+
+@StoredProcedureParameter(mode = ParameterMode.IN, type = String.class, name = "USERID"),
+
+@StoredProcedureParameter(mode = ParameterMode.IN, type = String.class, name = "PASSWORD"),
+
+@StoredProcedureParameter(mode = ParameterMode.OUT, type = String.class, name = "P_RESULT"),
+
+@StoredProcedureParameter(mode = ParameterMode.OUT, type = void.class, name = "P_Out_Record"),
+
+//@StoredProcedureParameter(mode = ParameterMode.OUT, type = String.class, name = "P_MESSAGE")
+
+//@StoredProcedureParameter(mode = ParameterMode.OUT, type = Date.class, name = "UPDATED_ON"),
+//
+//@StoredProcedureParameter(mode = ParameterMode.OUT, type = String.class, name = "ORG")
+
+}
+
+)
